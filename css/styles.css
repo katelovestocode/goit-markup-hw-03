@@ -68,7 +68,11 @@ img {
 
 /* Header */
 header {
-  border: 1px solid #ececec;
+  border: solid #ececec;
+  border-width: 0 0 1px 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1600px;
 }
 
 .container {
@@ -78,7 +82,7 @@ header {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Main-Nav */
@@ -255,16 +259,17 @@ button {
   display: flex;
 }
 
-.item * {
+/* .item * {
   outline: 2px solid tomato;
-}
+} */
 
 .team-list > .item + .item {
   margin-left: var(--margin-gap);
 }
 
 .card-content {
-  padding: 30px 59px 30px 60px;
+  padding: 30px;
+  text-align: center;
 }
 .team-name {
   margin-bottom: 10px;
@@ -338,6 +343,16 @@ a {
 }
 
 /* Filter buttons */
+.buttons-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.buttons-filter > .item + .item {
+  margin-left: 8px;
+}
+
 .filter {
   display: inline-block;
   min-width: 128px;
@@ -358,6 +373,29 @@ a {
 .filter:focus {
   background-color: var(--accent-blue-color);
   color: var(--white-color);
+}
+
+/* Card-Set */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--margin-gap));
+  margin-left: calc(-1 * var(--margin-gap));
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-top: var(--margin-gap);
+  margin-left: var(--margin-gap);
+}
+
+.cards-content {
+  padding: 20px 24px;
+  border: solid #ececec;
+  border-width: 0 1px 1px 1px;
 }
 
 .title {
