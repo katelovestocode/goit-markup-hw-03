@@ -72,7 +72,6 @@ header {
   border-width: 0 0 1px 0;
   margin-right: auto;
   margin-left: auto;
-  width: 1600px;
 }
 
 .container {
@@ -152,14 +151,10 @@ header {
 /* Hero */
 .hero {
   text-align: center;
-  width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 200px 0;
   background-color: var(--secondary-dark-bcg-color);
 }
 .hero-title {
-  padding: 200px 452px 30px 452px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -180,6 +175,7 @@ button {
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
+  margin-top: var(--margin-gap);
 
   background-color: var(--accent-blue-color);
   color: var(--white-color);
@@ -222,6 +218,8 @@ button {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
+
+  margin-top: 10px;
 }
 
 .features-title {
@@ -267,6 +265,13 @@ button {
   margin-left: var(--margin-gap);
 }
 
+.card {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .card-content {
   padding: 30px;
   text-align: center;
@@ -297,20 +302,10 @@ button {
 
 /* Footer */
 footer {
+  padding: 60px 0;
   background-color: var(--secondary-dark-bcg-color);
-  margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
-  height: 252px;
 }
 
-.bottom-address {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .address {
   margin-top: 20px;
 }
@@ -348,6 +343,10 @@ a {
   justify-content: center;
   margin-bottom: 50px;
 }
+.filter.current {
+  background-color: var(--accent-blue-color);
+  color: var(--white-color);
+}
 
 .buttons-filter > .item + .item {
   margin-left: 8px;
@@ -355,7 +354,6 @@ a {
 
 .filter {
   display: inline-block;
-  min-width: 128px;
   border-radius: 4px;
   padding: 6px 22px;
 
