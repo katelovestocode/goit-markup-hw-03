@@ -16,6 +16,8 @@
   --white-color: #ffffff;
   --secondary-dark-bcg-color: #2f303a;
   --third-bcg-color: #f5f4fa;
+  --button-hover-color: #188ce8;
+  --border-color: #ececec;
   --margin-gap: 30px;
 }
 
@@ -68,7 +70,7 @@ img {
 
 /* Header */
 header {
-  border: solid #ececec;
+  border: solid var(--border-color);
   border-width: 0 0 1px 0;
   margin-right: auto;
   margin-left: auto;
@@ -191,7 +193,7 @@ button {
 
 .button:hover,
 .button:focus {
-  background-color: #188ce8;
+  background-color: var(--button-hover-color);
 }
 
 /* Section class for Features, What we do, Our Team, Portfolio*/
@@ -392,7 +394,7 @@ a {
 
 .cards-content {
   padding: 20px 24px;
-  border: solid #ececec;
+  border: solid var(--border-color);
   border-width: 0 1px 1px 1px;
 }
 
